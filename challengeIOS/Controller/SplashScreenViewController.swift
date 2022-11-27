@@ -2,7 +2,7 @@
 //  SplashScreenViewController.swift
 //  challengeIOS
 //
-//  Created by sami on 26/11/2022.
+//  Created by Mohamed on 26/11/2022.
 //
 
 import UIKit
@@ -32,7 +32,7 @@ class SplashScreenViewController: UIViewController {
     
     
     private func setupAnimation(){
-        animationView.animation = Animation.named("splash")
+        animationView.animation = Animation.named("wait")
         animationView.frame = self.loadingView.bounds
         animationView.backgroundColor = .clear
         animationView.contentMode = .scaleAspectFill

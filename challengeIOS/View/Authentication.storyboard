@@ -34,20 +34,20 @@
                                                     <constraint firstAttribute="width" constant="307" id="raO-9q-g7C"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXt-fF-igV">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Se connecter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXt-fF-igV">
                                                 <rect key="frame" x="0.0" y="284" width="414" height="43"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVZ-nJ-BYj">
-                                                <rect key="frame" x="40" y="327" width="334" height="0.0"/>
-                                                <fontDescription key="fontDescription" name="DINNextLTW23-Regular" family="DIN Next LT W23" pointSize="22"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connectez-vous pour accéder à la liste des marques." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVZ-nJ-BYj">
+                                                <rect key="frame" x="40" y="330" width="334" height="45.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                 <color key="textColor" red="0.72549019609999998" green="0.72549019609999998" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C0J-ok-zhQ" userLabel="ViewForm">
-                                                <rect key="frame" x="10" y="397" width="394" height="200"/>
+                                                <rect key="frame" x="10" y="445.5" width="394" height="200"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EOm-S5-Ilw" customClass="CustomView" customModule="challengeIOS" customModuleProvider="target">
                                                         <rect key="frame" x="24" y="10" width="346" height="55"/>
@@ -159,7 +159,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QMK-fh-JoW" customClass="CustomView" customModule="challengeIOS" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="607" width="374" height="55"/>
+                                                <rect key="frame" x="20" y="655.5" width="374" height="55"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Se connecter !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBH-dq-Wmg">
                                                         <rect key="frame" x="102.5" y="16.5" width="169" height="30.5"/>
@@ -191,10 +191,10 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" translatesAutoresizingMaskIntoConstraints="NO" id="gdh-uN-anQ" userLabel="viewRegister">
-                                                <rect key="frame" x="87.5" y="662" width="239" height="35"/>
+                                                <rect key="frame" x="68.5" y="710.5" width="277.5" height="35"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Vous n'avez pas de compte !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQN-kz-8pl">
-                                                        <rect key="frame" x="0.0" y="0.0" width="185.5" height="35"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Vous n'avez pas de compte ? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQN-kz-8pl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="192" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="135" id="iQC-rN-NIR"/>
                                                         </constraints>
@@ -203,12 +203,12 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQc-eC-qeJ">
-                                                        <rect key="frame" x="185.5" y="0.0" width="53.5" height="35"/>
+                                                        <rect key="frame" x="192" y="0.0" width="85.5" height="35"/>
                                                         <attributedString key="attributedText">
-                                                            <fragment content="Register">
+                                                            <fragment content=" S'inscrire ">
                                                                 <attributes>
                                                                     <color key="NSColor" red="0.86362940070000005" green="0.67929327490000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    <font key="NSFont" size="16" name="TimesNewRomanPSMT"/>
+                                                                    <font key="NSFont" size="16" name="Verdana"/>
                                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     <integer key="NSUnderline" value="1"/>
                                                                 </attributes>
@@ -225,10 +225,9 @@
                                                 </constraints>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFC-gk-YeD">
-                                                <rect key="frame" x="87.5" y="667" width="239" height="30"/>
+                                                <rect key="frame" x="68.5" y="715.5" width="277.5" height="30"/>
                                                 <connections>
-                                                    <action selector="btnRegisterTapped:" destination="D4n-Ie-ErL" eventType="touchUpInside" id="QbE-DC-U3c"/>
-                                                    <segue destination="RBP-cZ-SYG" kind="show" id="CT5-Th-spw"/>
+                                                    <segue destination="RBP-cZ-SYG" kind="show" identifier="register" id="CT5-Th-spw"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -245,10 +244,10 @@
                                             <constraint firstItem="C0J-ok-zhQ" firstAttribute="top" secondItem="pVZ-nJ-BYj" secondAttribute="bottom" constant="70" id="WVx-Bs-BSV"/>
                                             <constraint firstItem="EFC-gk-YeD" firstAttribute="bottom" secondItem="gdh-uN-anQ" secondAttribute="bottom" id="XAE-Xk-WDM"/>
                                             <constraint firstItem="HXt-fF-igV" firstAttribute="leading" secondItem="3ls-BC-P2K" secondAttribute="leading" id="Z2E-cV-zZN"/>
-                                            <constraint firstItem="pVZ-nJ-BYj" firstAttribute="top" secondItem="HXt-fF-igV" secondAttribute="bottom" id="aE8-v7-OMp"/>
                                             <constraint firstAttribute="height" constant="810" id="lMa-Sz-WVF"/>
                                             <constraint firstAttribute="trailing" secondItem="HXt-fF-igV" secondAttribute="trailing" id="oSD-wg-Ise"/>
                                             <constraint firstItem="7Ul-Es-0kG" firstAttribute="top" secondItem="3ls-BC-P2K" secondAttribute="top" constant="10" id="oW1-GF-8Tj"/>
+                                            <constraint firstItem="pVZ-nJ-BYj" firstAttribute="top" secondItem="HXt-fF-igV" secondAttribute="bottom" constant="3" id="oeE-kn-hcj"/>
                                             <constraint firstAttribute="trailing" secondItem="QMK-fh-JoW" secondAttribute="trailing" constant="20" id="oor-iT-fzZ"/>
                                             <constraint firstItem="EFC-gk-YeD" firstAttribute="top" secondItem="QMK-fh-JoW" secondAttribute="bottom" constant="5" id="t1W-i3-p0D"/>
                                             <constraint firstItem="pVZ-nJ-BYj" firstAttribute="centerX" secondItem="3ls-BC-P2K" secondAttribute="centerX" id="tIS-MG-azJ"/>
@@ -294,10 +293,10 @@
             </objects>
             <point key="canvasLocation" x="2212" y="63"/>
         </scene>
-        <!--Sign In View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="wgq-zX-qWm">
             <objects>
-                <viewController storyboardIdentifier="SignInViewController" modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="RBP-cZ-SYG" customClass="SignInViewController" customModule="challengeIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="RBP-cZ-SYG" customClass="SignUpViewController" customModule="challengeIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OAY-rZ-0Qd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -315,20 +314,20 @@
                                                     <constraint firstAttribute="width" constant="307" id="vTT-0H-kMa"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t38-mu-Hgq">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S'inscrire" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t38-mu-Hgq">
                                                 <rect key="frame" x="0.0" y="284" width="414" height="43"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ox3-Ad-bml">
-                                                <rect key="frame" x="40" y="327" width="334" height="0.0"/>
-                                                <fontDescription key="fontDescription" name="DINNextLTW23-Regular" family="DIN Next LT W23" pointSize="22"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Créez un compte pour vous connecter et accéder aux listes de marques." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ox3-Ad-bml">
+                                                <rect key="frame" x="40" y="330" width="334" height="45.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                 <color key="textColor" red="0.72549019609999998" green="0.72549019609999998" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xlQ-hl-Zec" userLabel="ViewForm">
-                                                <rect key="frame" x="10" y="397" width="394" height="200"/>
+                                                <rect key="frame" x="10" y="445.5" width="394" height="200"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8fC-Il-Jkp" customClass="CustomView" customModule="challengeIOS" customModuleProvider="target">
                                                         <rect key="frame" x="24" y="10" width="346" height="55"/>
@@ -440,10 +439,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I2j-0i-Ipn" customClass="CustomView" customModule="challengeIOS" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="607" width="374" height="55"/>
+                                                <rect key="frame" x="20" y="655.5" width="374" height="55"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creer Compte!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kg3-NN-X1E">
-                                                        <rect key="frame" x="101.5" y="16.5" width="171" height="30.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Créer compte !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kg3-NN-X1E">
+                                                        <rect key="frame" x="100" y="16.5" width="174" height="30.5"/>
                                                         <fontDescription key="fontDescription" name="DINNextLTW23-Regular" family="DIN Next LT W23" pointSize="26"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -451,7 +450,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNA-dq-X2Q">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="55"/>
                                                         <connections>
-                                                            <action selector="btnLoginTapped:" destination="RBP-cZ-SYG" eventType="touchUpInside" id="N9g-XW-X4J"/>
+                                                            <action selector="btnRegisterTapped:" destination="RBP-cZ-SYG" eventType="touchUpInside" id="egr-VZ-M1R"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -472,10 +471,10 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" translatesAutoresizingMaskIntoConstraints="NO" id="7Mx-7P-SXj" userLabel="viewRegister">
-                                                <rect key="frame" x="101" y="662" width="212" height="35"/>
+                                                <rect key="frame" x="83.5" y="710.5" width="247" height="35"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Vous avez un compte !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gT5-dO-Vrp">
-                                                        <rect key="frame" x="0.0" y="0.0" width="146" height="35"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Avez-vous un compte ? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gT5-dO-Vrp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="154" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="135" id="KCN-9I-OFH"/>
                                                         </constraints>
@@ -484,12 +483,12 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJo-g9-Ycz">
-                                                        <rect key="frame" x="146" y="0.0" width="66" height="35"/>
+                                                        <rect key="frame" x="154" y="0.0" width="93" height="35"/>
                                                         <attributedString key="attributedText">
-                                                            <fragment content="Connecter">
+                                                            <fragment content=" Connecter ">
                                                                 <attributes>
                                                                     <color key="NSColor" red="0.86362940070000005" green="0.67929327490000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    <font key="NSFont" size="16" name="TimesNewRomanPSMT"/>
+                                                                    <font key="NSFont" size="16" name="Verdana"/>
                                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     <integer key="NSUnderline" value="1"/>
                                                                 </attributes>
@@ -506,9 +505,9 @@
                                                 </constraints>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hL-Ue-7Je">
-                                                <rect key="frame" x="101" y="667" width="212" height="30"/>
+                                                <rect key="frame" x="83.5" y="715.5" width="247" height="30"/>
                                                 <connections>
-                                                    <action selector="btnRegisterTapped:" destination="RBP-cZ-SYG" eventType="touchUpInside" id="o0Z-Uv-vBE"/>
+                                                    <segue destination="D4n-Ie-ErL" kind="show" identifier="signIn" id="5Ob-Lj-vrT"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -517,6 +516,7 @@
                                             <constraint firstItem="I2j-0i-Ipn" firstAttribute="top" secondItem="xlQ-hl-Zec" secondAttribute="bottom" constant="10" id="0jA-7w-wfh"/>
                                             <constraint firstItem="xlQ-hl-Zec" firstAttribute="leading" secondItem="NHU-xp-QX8" secondAttribute="leading" constant="10" id="5ee-dx-Dct"/>
                                             <constraint firstItem="RcB-Ke-rfy" firstAttribute="top" secondItem="NHU-xp-QX8" secondAttribute="top" constant="10" id="7Vv-Bk-BWn"/>
+                                            <constraint firstItem="Ox3-Ad-bml" firstAttribute="top" secondItem="t38-mu-Hgq" secondAttribute="bottom" constant="3" id="G8F-xB-41W"/>
                                             <constraint firstItem="Ox3-Ad-bml" firstAttribute="leading" secondItem="NHU-xp-QX8" secondAttribute="leading" constant="40" id="I5Q-de-bIU"/>
                                             <constraint firstItem="I2j-0i-Ipn" firstAttribute="leading" secondItem="NHU-xp-QX8" secondAttribute="leading" constant="20" id="LpY-Tv-WHn"/>
                                             <constraint firstItem="xlQ-hl-Zec" firstAttribute="top" secondItem="Ox3-Ad-bml" secondAttribute="bottom" constant="70" id="Mzk-dX-R1Q"/>
@@ -529,7 +529,6 @@
                                             <constraint firstAttribute="trailing" secondItem="t38-mu-Hgq" secondAttribute="trailing" id="lcJ-5I-44v"/>
                                             <constraint firstItem="4hL-Ue-7Je" firstAttribute="top" secondItem="I2j-0i-Ipn" secondAttribute="bottom" constant="5" id="n20-MG-NmO"/>
                                             <constraint firstItem="4hL-Ue-7Je" firstAttribute="leading" secondItem="7Mx-7P-SXj" secondAttribute="leading" id="nVj-Lr-pM4"/>
-                                            <constraint firstItem="Ox3-Ad-bml" firstAttribute="top" secondItem="t38-mu-Hgq" secondAttribute="bottom" id="nqq-tI-5Kc"/>
                                             <constraint firstAttribute="height" constant="810" id="pS1-cs-r4q"/>
                                             <constraint firstAttribute="trailing" secondItem="I2j-0i-Ipn" secondAttribute="trailing" constant="20" id="q2y-yG-9CS"/>
                                             <constraint firstItem="4hL-Ue-7Je" firstAttribute="trailing" secondItem="7Mx-7P-SXj" secondAttribute="trailing" id="vXr-uE-bZE"/>
@@ -567,16 +566,17 @@
                         <outlet property="passwordTF" destination="GDX-fu-pTp" id="Alf-yU-guw"/>
                         <outlet property="viewEmail" destination="8fC-Il-Jkp" id="2hd-LH-S8q"/>
                         <outlet property="viewPassword" destination="RY6-2F-wLD" id="HvF-z5-bu8"/>
+                        <segue destination="8tP-h6-PjV" kind="show" identifier="proceedToHome" id="GWg-2C-Ue7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SQ2-Ay-VBa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3826" y="63"/>
         </scene>
-        <!--ViewController-->
+        <!--BrandViewController-->
         <scene sceneID="pg1-Qq-d0K">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="ViewController" id="8tP-h6-PjV" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="BrandViewController" id="8tP-h6-PjV" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="nhV-eb-h8C"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YEb-37-ttp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -584,6 +584,10 @@
             <point key="canvasLocation" x="3027" y="-61"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="5Ob-Lj-vrT"/>
+        <segue reference="GWg-2C-Ue7"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow_back" width="9.5" height="14.5"/>
         <image name="eye" catalog="system" width="128" height="81"/>

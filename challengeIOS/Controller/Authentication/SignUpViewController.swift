@@ -1,15 +1,16 @@
 //
-//  SignInViewController.swift
+//  SignUpViewController.swift
 //  challengeIOS
 //
-//  Created by Mohamed on 26/11/2022.
+//  Created by Mohamed on 27/11/2022.
 //
 
 import UIKit
 import FirebaseAuth
 
-class SignInViewController: UIViewController {
+class SignUpViewController: UIViewController {
 
+    
     @IBOutlet var viewEmail: CustomView!
     @IBOutlet var viewPassword: CustomView!
     
@@ -24,16 +25,15 @@ class SignInViewController: UIViewController {
         self.passwordTF.isSecureTextEntry = true
     }
  
-    @IBAction func btnLoginTapped(_ sender: Any) {
+    @IBAction func btnRegisterTapped(_ sender: Any) {
         if self.checkInputs(){
-            self.login(email: self.emailTF.text!, password: self.passwordTF.text!)
+            self.Register(email: self.emailTF.text!, password: self.passwordTF.text!)
         }else{
             print("------- check all inputs ... ")
             self.presentAlert(withTitle: "Erreur!", message: "Merci de verifier tout les champs")
         }
     }
     
-
     
     @IBAction func displayPassword(_ sender: Any) {
         self.passwordTF.isSecureTextEntry = !self.passwordTF.isSecureTextEntry
@@ -61,32 +61,30 @@ class SignInViewController: UIViewController {
         
     }
     
-    private func login(email:String, password:String){
+    private func Register(email:String, password:String){
         
         BokehLoader.show()
         
-        FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password, completion: {[weak self]  result, error in
+        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: {[weak self] result, error in
             
             guard let strongSelf = self else{
                 return
             }
             
-            BokehLoader.hide()
-            
             guard error == nil else{
-                print("------ error; ")
-                print(error)
-                strongSelf.presentAlert(withTitle: "Erreur!", message: "Aucun profil avec ces identificateurs n'a été trouvé!")
+                BokehLoader.hide()
                 return
             }
+            BokehLoader.hide()
             
-            strongSelf.emailTF.resignFirstResponder()
-            strongSelf.passwordTF.resignFirstResponder()
-            strongSelf.performSegue(withIdentifier: "navigateToHome", sender: nil)
+            strongSelf.showAlertWith(msg: "Vous pouvez maintenant accéder à la liste de marques. ")
             
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.3){
+                strongSelf.performSegue(withIdentifier: "proceedToHome", sender: nil)
+            }
         })
         
     }
-
     
+
 }

@@ -2,7 +2,7 @@
 //  DetailsBrandViewController.swift
 //  challengeIOS
 //
-//  Created by sami on 26/11/2022.
+//  Created by Mohamed on 26/11/2022.
 //
 
 import UIKit
@@ -21,6 +21,8 @@ class DetailsBrandViewController: UIViewController {
     @IBOutlet var ciffreAffaireLbl: UILabel!
     @IBOutlet var commissionLbl: UILabel!
     @IBOutlet var nbVenteLbl: UILabel!
+    @IBOutlet var viewCalculating: UIView!
+    @IBOutlet var constraintePaddingTop: NSLayoutConstraint!
     
     var brand:Brand?
     
@@ -73,27 +75,40 @@ class DetailsBrandViewController: UIViewController {
     
     
     private func getChiffers(){
-        rootRef
+        print("----- will call firebase query .... ")
+        
+//        BokehLoader.show()
+        var ref: DatabaseReference!
+        ref = Database.database().reference()
+        ref
             .child("conversions")
             .child("purchase")
             .queryOrdered(byChild: "offerId")
-            .queryEqual(toValue: self.brand?.offreId)
+            .queryEqual(toValue: self.brand!.offreId)
             .observe(.value, with: { (snapshot) -> Void in
                 self.countVente = Int(snapshot.childrenCount)
+                print("----- first respond from firebase query .... ")
                 if snapshot.childrenCount > 0{
                     for purchases in snapshot.children.allObjects as! [DataSnapshot] {
-                        
+
                         let purchase = purchases.value as! [String: Any]
-                    
+
                         if let val_amount = purchase["amount"] as? Double {
                             self.totalAmount  += val_amount
                         }
-                        
+
                         if let val_commission = purchase["commission"] as? String {
                             self.totalCommission  += Double(val_commission)!
                         }
                     }
+                    
+//                    BokehLoader.hide()
+                    self.viewCalculating.isHidden = true
+                    self.constraintePaddingTop.constant = 30
                     self.updateData()
+                }else{
+                    self.viewCalculating.isHidden = true
+                    self.constraintePaddingTop.constant = 30
                 }
             })
     }

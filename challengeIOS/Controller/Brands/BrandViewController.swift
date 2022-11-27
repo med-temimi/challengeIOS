@@ -10,7 +10,7 @@ import Firebase
 import Lottie
 import SDWebImage
 
-class ViewController: UIViewController {
+class BrandViewController: UIViewController {
     
     @IBOutlet var premiumMarqueView: UIView!
     @IBOutlet var allMarqueView: UIView!
@@ -23,9 +23,11 @@ class ViewController: UIViewController {
     
     @IBOutlet var brandsCollectionView: UICollectionView!
     @IBOutlet var viewLoading: UIView!
+    @IBOutlet var viewNoDataFound: UIView!
     
     var brandsList = [Brand]()
     var premiumBrandsList = [Brand]()
+    var newBrandsList = [Brand]()
     var isPremiumSelected:Bool = true
     
     let animationView = AnimationView()
@@ -82,7 +84,7 @@ class ViewController: UIViewController {
         rootRef
         .child("brands")
         .observe(.value, with: { (snapshot) -> Void in
-            if snapshot.childrenCount > 0{
+            if snapshot.childrenCount > 0 {
                 self.brandsList.removeAll()
                 
                 for brands in snapshot.children.allObjects as! [DataSnapshot] {
@@ -130,17 +132,27 @@ class ViewController: UIViewController {
                     self.brandsList.append(brand)
                     
                 }
+                
                 self.fetchPremium()
+                
+            }else{
+                self.viewLoading.isHidden = true
+                self.brandsCollectionView.isHidden = true
+                self.viewNoDataFound.isHidden = false
             }
         })
         
     }
     
     private func fetchPremium(){
-        
+  
         for item in self.brandsList {
             if item.premium {
                 self.premiumBrandsList.append(item)
+            }
+            
+            if item.isNew {
+                self.newBrandsList.append(item)
             }
         }
         
@@ -149,6 +161,9 @@ class ViewController: UIViewController {
             self.brandsCollectionView.reloadData()
         }
         
+        self.viewLoading.isHidden = true
+        self.viewNoDataFound.isHidden = true
+        self.brandsCollectionView.isHidden = false
     }
     
     @objc func premiumMarques(_ sender: UITapGestureRecognizer? = nil) {
@@ -176,17 +191,17 @@ class ViewController: UIViewController {
     
     @IBAction func logOut(_ sender: Any) {
         
-        let alert = UIAlertController(title: "Se deconnecter!", message: "Voulez vous vraiment se deconnecter !", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Déconnexion !", message: "Voulez vous vraiment se déconnecter !", preferredStyle: .alert)
         
         let oKBtn = UIAlertAction(title: "Confirmer", style: .default, handler: {(_ action: UIAlertAction) -> Void in
-            print("------- confirmed logout ")
+            
             do{
                 try FirebaseAuth.Auth.auth().signOut()
                 let storyboard = UIStoryboard(name: "Authentication", bundle: nil)
                 let signInVC = storyboard.instantiateViewController(withIdentifier: "SignInViewController") as! SignInViewController
                 self.navigationController?.pushViewController(signInVC, animated: true)
             }catch{
-                print("---- an error occured when sign out ! ")
+                print("---- an error occured when signing out ! ")
             }
         })
         
@@ -204,7 +219,7 @@ class ViewController: UIViewController {
 }
 
 
-extension ViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate {
+extension BrandViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         print("------- count all brands : \(self.brandsList.count)")
