@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>281442778757-157ndq3mqm9bk2ugtjllcol91pjtuq1r.apps.googleusercontent.com</string>
+	<string>705380234746-scv4ne96a3klfd4rdjuper8lb7vv21po.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.281442778757-157ndq3mqm9bk2ugtjllcol91pjtuq1r</string>
+	<string>com.googleusercontent.apps.705380234746-scv4ne96a3klfd4rdjuper8lb7vv21po</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAS9TpVI7OL_hy2pEOXG6_-JeMSSvVV5zk</string>
+	<string>AIzaSyBuqI15X-kgpJsRyAhNLDCfvyfrNcuUh24</string>
 	<key>GCM_SENDER_ID</key>
-	<string>281442778757</string>
+	<string>705380234746</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>Fatma.AppVente</string>
 	<key>PROJECT_ID</key>
-	<string>fakestore-526e1</string>
+	<string>test-smi-a21cb</string>
 	<key>STORAGE_BUCKET</key>
-	<string>fakestore-526e1.appspot.com</string>
+	<string>test-smi-a21cb.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:281442778757:ios:7d14dcfbee59c7a07bf3ec</string>
+	<string>1:705380234746:ios:c36dd3cf22284fb6872043</string>
+	<key>DATABASE_URL</key>
+	<string>https://test-smi-a21cb-default-rtdb.europe-west1.firebasedatabase.app</string>
 </dict>
 </plist>

@@ -22,6 +22,9 @@ class SignInViewController: UIViewController {
         self.navigationItem.hidesBackButton = true
         self.navigationController?.navigationBar.isHidden = true
         self.passwordTF.isSecureTextEntry = true
+        
+        self.emailTF.delegate = self
+        self.passwordTF.delegate = self
     }
  
     @IBAction func btnLoginTapped(_ sender: Any) {
@@ -29,7 +32,7 @@ class SignInViewController: UIViewController {
             self.login(email: self.emailTF.text!, password: self.passwordTF.text!)
         }else{
             print("------- check all inputs ... ")
-            self.presentAlert(withTitle: "Erreur!", message: "Merci de verifier tout les champs")
+            self.presentAlert(withTitle: "Erreur!", message: "Veuillez vérifier vos informations d'identification.")
         }
     }
     
@@ -76,6 +79,7 @@ class SignInViewController: UIViewController {
             guard error == nil else{
                 print("------ error; ")
                 print(error)
+                BokehLoader.hide()
                 strongSelf.presentAlert(withTitle: "Erreur!", message: "Aucun profil avec ces identificateurs n'a été trouvé!")
                 return
             }
@@ -89,4 +93,38 @@ class SignInViewController: UIViewController {
     }
 
     
+}
+
+extension SignInViewController: UITextFieldDelegate{
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        if textField == self.emailTF{
+            viewEmail.layer.borderWidth = 1
+            viewEmail.layer.borderColor = UIColor.systemYellow.cgColor
+        }
+        if textField == self.passwordTF{
+            viewPassword.layer.borderWidth = 1
+            viewPassword.layer.borderColor = UIColor.systemYellow.cgColor
+        }
+    }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField == self.emailTF{
+            if textField.text == nil || textField.text == "" || !self.isValidEmail(textField.text!){
+                viewEmail.layer.borderWidth = 1
+                viewEmail.layer.borderColor = UIColor.systemRed.cgColor
+            }else{
+                viewEmail.layer.borderWidth = 1
+                viewEmail.layer.borderColor = UIColor.systemGreen.cgColor
+            }
+        }
+        
+        if textField == self.passwordTF{
+            if textField.text == nil || textField.text == ""{
+                viewPassword.layer.borderWidth = 1
+                viewPassword.layer.borderColor = UIColor.systemRed.cgColor
+            }else{
+                viewPassword.layer.borderWidth = 1
+                viewPassword.layer.borderColor = UIColor.systemGreen.cgColor
+            }
+        }
+    }
 }

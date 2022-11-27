@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26240E382933F5BE005F385C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26240E372933F5BE005F385C /* GoogleService-Info.plist */; };
 		2638AB862933B269003068FF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2638AB852933B269003068FF /* SignUpViewController.swift */; };
 		2638ABE92933CE92003068FF /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2638ABE82933CE92003068FF /* UIViewController.swift */; };
 		2638AC242933D06C003068FF /* BokehLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2638AC232933D06C003068FF /* BokehLoader.swift */; };
@@ -20,7 +19,7 @@
 		26C670AB29322C5C00E0AE8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26C670A929322C5C00E0AE8E /* LaunchScreen.storyboard */; };
 		26C670B629322C5C00E0AE8E /* challengeIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C670B529322C5C00E0AE8E /* challengeIOSTests.swift */; };
 		26C670C129322C5C00E0AE8E /* challengeIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C670C029322C5C00E0AE8E /* challengeIOSUITests.swift */; };
-		26C670E92932351F00E0AE8E /* GoogleService-Info1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26C670E82932351F00E0AE8E /* GoogleService-Info1.plist */; };
+		26C670E92932351F00E0AE8E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26C670E82932351F00E0AE8E /* GoogleService-Info.plist */; };
 		26C6711529323A2000E0AE8E /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C6711429323A2000E0AE8E /* Brand.swift */; };
 		26C671462932460400E0AE8E /* BrandCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C671452932460400E0AE8E /* BrandCollectionViewCell.swift */; };
 		26C6714F29326DCF00E0AE8E /* DetailsBrandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C6714E29326DCF00E0AE8E /* DetailsBrandViewController.swift */; };
@@ -29,7 +28,6 @@
 		26C671C82932988900E0AE8E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C671C72932988900E0AE8E /* SignInViewController.swift */; };
 		26C671CD29329BBB00E0AE8E /* waiting.json in Resources */ = {isa = PBXBuildFile; fileRef = 26C671CC29329BBB00E0AE8E /* waiting.json */; };
 		26C671D829329CB700E0AE8E /* wait.json in Resources */ = {isa = PBXBuildFile; fileRef = 26C671D629329CB600E0AE8E /* wait.json */; };
-		26C671D929329CB700E0AE8E /* load.json in Resources */ = {isa = PBXBuildFile; fileRef = 26C671D729329CB700E0AE8E /* load.json */; };
 		26C6723B2932AD8A00E0AE8E /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26C6723A2932AD8A00E0AE8E /* Authentication.storyboard */; };
 		26C672402932AE0800E0AE8E /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C6723F2932AE0800E0AE8E /* SplashScreenViewController.swift */; };
 		34BC11ADB0FD2C4FAB5156C7 /* Pods_challengeIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2556983D96BC0B5DC9AA786E /* Pods_challengeIOS.framework */; };
@@ -56,7 +54,6 @@
 
 /* Begin PBXFileReference section */
 		2556983D96BC0B5DC9AA786E /* Pods_challengeIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_challengeIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		26240E372933F5BE005F385C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2638AB852933B269003068FF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		2638ABE82933CE92003068FF /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		2638AC232933D06C003068FF /* BokehLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BokehLoader.swift; sourceTree = "<group>"; };
@@ -75,7 +72,7 @@
 		26C670BC29322C5C00E0AE8E /* challengeIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = challengeIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26C670C029322C5C00E0AE8E /* challengeIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = challengeIOSUITests.swift; sourceTree = "<group>"; };
 		26C670C229322C5C00E0AE8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		26C670E82932351F00E0AE8E /* GoogleService-Info1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info1.plist"; sourceTree = "<group>"; };
+		26C670E82932351F00E0AE8E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		26C6711429323A2000E0AE8E /* Brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
 		26C671452932460400E0AE8E /* BrandCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandCollectionViewCell.swift; sourceTree = "<group>"; };
 		26C6714E29326DCF00E0AE8E /* DetailsBrandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsBrandViewController.swift; sourceTree = "<group>"; };
@@ -84,7 +81,6 @@
 		26C671C72932988900E0AE8E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		26C671CC29329BBB00E0AE8E /* waiting.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = waiting.json; sourceTree = "<group>"; };
 		26C671D629329CB600E0AE8E /* wait.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wait.json; sourceTree = "<group>"; };
-		26C671D729329CB700E0AE8E /* load.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = load.json; sourceTree = "<group>"; };
 		26C6723A2932AD8A00E0AE8E /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		26C6723F2932AE0800E0AE8E /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		4AE6272DF2AFBF6390A5A251 /* Pods_challengeIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_challengeIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,15 +162,13 @@
 		26C6709A29322C5200E0AE8E /* challengeIOS */ = {
 			isa = PBXGroup;
 			children = (
-				26240E372933F5BE005F385C /* GoogleService-Info.plist */,
 				26C671CC29329BBB00E0AE8E /* waiting.json */,
-				26C671D729329CB700E0AE8E /* load.json */,
 				26C671D629329CB600E0AE8E /* wait.json */,
 				26C67153293271B000E0AE8E /* Extensions */,
 				26C6713429323C8100E0AE8E /* View */,
 				26C6713329323C7A00E0AE8E /* Controller */,
 				26C6711329323A0F00E0AE8E /* Model */,
-				26C670E82932351F00E0AE8E /* GoogleService-Info1.plist */,
+				26C670E82932351F00E0AE8E /* GoogleService-Info.plist */,
 				26C6709B29322C5200E0AE8E /* AppDelegate.swift */,
 				26C6709D29322C5200E0AE8E /* SceneDelegate.swift */,
 				26C670A729322C5C00E0AE8E /* Assets.xcassets */,
@@ -424,14 +418,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				26C671D829329CB700E0AE8E /* wait.json in Resources */,
-				26C671D929329CB700E0AE8E /* load.json in Resources */,
 				26C670AB29322C5C00E0AE8E /* LaunchScreen.storyboard in Resources */,
-				26240E382933F5BE005F385C /* GoogleService-Info.plist in Resources */,
 				26C670A829322C5C00E0AE8E /* Assets.xcassets in Resources */,
 				26C670A329322C5200E0AE8E /* Main.storyboard in Resources */,
 				26C6723B2932AD8A00E0AE8E /* Authentication.storyboard in Resources */,
 				26C671CD29329BBB00E0AE8E /* waiting.json in Resources */,
-				26C670E92932351F00E0AE8E /* GoogleService-Info1.plist in Resources */,
+				26C670E92932351F00E0AE8E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
