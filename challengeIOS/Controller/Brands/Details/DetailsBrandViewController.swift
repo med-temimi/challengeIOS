@@ -109,6 +109,7 @@ class DetailsBrandViewController: UIViewController {
                 }else{
                     self.viewCalculating.isHidden = true
                     self.constraintePaddingTop.constant = 30
+                    self.updateData()
                 }
             })
     }

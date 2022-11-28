@@ -15,7 +15,8 @@ class CustomImageView: UIImageView {
     var shadowAdded: Bool = false
     override func draw(_ rect: CGRect) {
         self.clipsToBounds = true
-        updateLayerProperties()
+        //add shadow to image
+//        updateLayerProperties()
         
     }
     
@@ -26,15 +27,22 @@ class CustomImageView: UIImageView {
         }
     }
     
-    func updateLayerProperties() {
-        self.layer.shadowColor = UIColor(red: 111/255, green: 10/255, blue: 114/255, alpha: 0.25).cgColor
-        self.layer.shadowOffset = CGSize(width: 10, height: 10)
-        self.layer.shadowOpacity = 1.0
-        self.layer.shadowRadius = 10.0
-        self.layer.masksToBounds = true
-        
-        
+    @IBInspectable var border: CGFloat = 0 {
+        didSet {
+            self.layer.borderColor = UIColor.systemGray6.cgColor
+            self.layer.borderWidth = border
+        }
     }
+    
+//    func updateLayerProperties() {
+//        self.layer.shadowColor = UIColor(red: 111/255, green: 10/255, blue: 114/255, alpha: 0.25).cgColor
+//        self.layer.shadowOffset = CGSize(width: 10, height: 10)
+//        self.layer.shadowOpacity = 1.0
+//        self.layer.shadowRadius = 10.0
+//        self.layer.masksToBounds = true
+//
+//
+//    }
 }
 
 

@@ -153,7 +153,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YdA-hX-cg9" customClass="CustomImageView" customModule="challengeIOS" customModuleProvider="target">
-                                                    <rect key="frame" x="5" y="5" width="118" height="118"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="108" id="0yM-mF-Sdw"/>
                                                         <constraint firstAttribute="height" constant="108" id="P9R-R6-PSX"/>
@@ -162,14 +162,17 @@
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                             <real key="value" value="16"/>
                                                         </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="border">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="YdA-hX-cg9" secondAttribute="bottom" constant="5" id="OLW-N9-G24"/>
-                                                <constraint firstItem="YdA-hX-cg9" firstAttribute="top" secondItem="UQq-7m-1dg" secondAttribute="top" constant="5" id="PSO-l2-avq"/>
-                                                <constraint firstAttribute="trailing" secondItem="YdA-hX-cg9" secondAttribute="trailing" constant="5" id="cYv-3n-cut"/>
-                                                <constraint firstItem="YdA-hX-cg9" firstAttribute="leading" secondItem="UQq-7m-1dg" secondAttribute="leading" constant="5" id="uoW-ZH-hIb"/>
+                                                <constraint firstAttribute="bottom" secondItem="YdA-hX-cg9" secondAttribute="bottom" id="OLW-N9-G24"/>
+                                                <constraint firstItem="YdA-hX-cg9" firstAttribute="top" secondItem="UQq-7m-1dg" secondAttribute="top" id="PSO-l2-avq"/>
+                                                <constraint firstAttribute="trailing" secondItem="YdA-hX-cg9" secondAttribute="trailing" id="cYv-3n-cut"/>
+                                                <constraint firstItem="YdA-hX-cg9" firstAttribute="leading" secondItem="UQq-7m-1dg" secondAttribute="leading" id="uoW-ZH-hIb"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
@@ -247,6 +250,9 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="16"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="border">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nike" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgI-ai-pp1">
@@ -288,8 +294,8 @@
                                             <constraint firstAttribute="width" constant="55" id="oMb-9B-7Zz"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="__" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNn-eT-X13">
-                                        <rect key="frame" x="243.5" y="33" width="36.5" height="38"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_._€" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNn-eT-X13">
+                                        <rect key="frame" x="229.5" y="33" width="65" height="38"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
                                         <color key="textColor" systemColor="systemTealColor"/>
                                         <nil key="highlightedColor"/>
@@ -330,8 +336,8 @@
                                             <constraint firstAttribute="width" constant="55" id="r0R-xQ-fej"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="__" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4l-DF-3Eo">
-                                        <rect key="frame" x="243.5" y="33" width="36.5" height="38.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_._€" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4l-DF-3Eo">
+                                        <rect key="frame" x="229.5" y="33" width="65" height="38.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
                                         <color key="textColor" systemColor="systemTealColor"/>
                                         <nil key="highlightedColor"/>
@@ -375,7 +381,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUw-bc-NMa">
-                                        <rect key="frame" x="243.5" y="33" width="36.5" height="38.5"/>
+                                        <rect key="frame" x="229.5" y="33" width="65" height="38.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
                                         <color key="textColor" systemColor="systemTealColor"/>
                                         <nil key="highlightedColor"/>

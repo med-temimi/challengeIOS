@@ -33,7 +33,7 @@ class SignUpViewController: UIViewController {
             self.Register(email: self.emailTF.text!, password: self.passwordTF.text!)
         }else{
             print("------- check all inputs ... ")
-            self.presentAlert(withTitle: "Erreur!", message: "Veuillez vérifier vos informations d'identification.")
+            self.presentAlert(withTitle: "Erreur!", message: "Vérifier vos informations d'identification.")
         }
     }
     
@@ -54,10 +54,12 @@ class SignUpViewController: UIViewController {
         var isValid = true
         if self.emailTF.text!.isEmpty || !self.isValidEmail(self.emailTF.text!) {
             isValid = false
+            self.viewEmail.isInvalid()
         }
         
         if self.passwordTF.text!.isEmpty {
             isValid = false
+            self.viewPassword.isInvalid()
         }
         
         return isValid
@@ -96,32 +98,27 @@ class SignUpViewController: UIViewController {
 extension SignUpViewController: UITextFieldDelegate{
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if textField == self.emailTF{
-            viewEmail.layer.borderWidth = 1
-            viewEmail.layer.borderColor = UIColor.systemYellow.cgColor
+            viewEmail.isSelected()
         }
         if textField == self.passwordTF{
-            viewPassword.layer.borderWidth = 1
-            viewPassword.layer.borderColor = UIColor.systemYellow.cgColor
+            viewPassword.isSelected()
         }
     }
+    
     func textFieldDidEndEditing(_ textField: UITextField) {
         if textField == self.emailTF{
             if textField.text == nil || textField.text == "" || !self.isValidEmail(textField.text!){
-                viewEmail.layer.borderWidth = 1
-                viewEmail.layer.borderColor = UIColor.systemRed.cgColor
+                viewEmail.isInvalid()
             }else{
-                viewEmail.layer.borderWidth = 1
-                viewEmail.layer.borderColor = UIColor.systemGreen.cgColor
+                viewEmail.isValid()
             }
         }
         
         if textField == self.passwordTF{
             if textField.text == nil || textField.text == ""{
-                viewPassword.layer.borderWidth = 1
-                viewPassword.layer.borderColor = UIColor.systemRed.cgColor
+                viewPassword.isInvalid()
             }else{
-                viewPassword.layer.borderWidth = 1
-                viewPassword.layer.borderColor = UIColor.systemGreen.cgColor
+                viewPassword.isValid()
             }
         }
     }

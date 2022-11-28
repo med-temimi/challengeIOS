@@ -32,7 +32,20 @@ class CustomView: UIView {
         self.layer.shadowOpacity = 1.0
         self.layer.shadowRadius = 10.0
         self.layer.masksToBounds = true
-        
-        
+    }
+    
+    func isSelected(){
+        self.layer.borderWidth = 1
+        self.layer.borderColor = UIColor.systemYellow.cgColor
+    }
+    
+    func isValid(){
+        self.layer.borderWidth = 1
+        self.layer.borderColor = UIColor.systemGreen.cgColor
+    }
+    
+    func isInvalid(){
+        self.layer.borderWidth = 1
+        self.layer.borderColor = UIColor.systemRed.cgColor
     }
 }
