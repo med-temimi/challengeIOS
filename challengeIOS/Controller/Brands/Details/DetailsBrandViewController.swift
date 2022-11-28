@@ -24,6 +24,11 @@ class DetailsBrandViewController: UIViewController {
     @IBOutlet var viewCalculating: UIView!
     @IBOutlet var constraintePaddingTop: NSLayoutConstraint!
     
+    @IBOutlet var imgHeightConstrainte: NSLayoutConstraint!
+    @IBOutlet var imgWidthConstrainte: NSLayoutConstraint!
+    @IBOutlet var topViewHeightConstrainte: NSLayoutConstraint!
+    
+    
     var brand:Brand?
     
     let rootRef = Database.database().reference()
@@ -60,6 +65,10 @@ class DetailsBrandViewController: UIViewController {
             
         }
         
+        let screenWidth = UIScreen.main.bounds.width
+        self.imgWidthConstrainte.constant = screenWidth * 0.28
+        self.imgHeightConstrainte.constant = screenWidth * 0.28
+        self.topViewHeightConstrainte.constant = (screenWidth * 0.28) + 50
     }
     
     private func updateData(){
